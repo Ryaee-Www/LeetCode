@@ -2,17 +2,19 @@ public class Solution {
     public void reorderList(ListNode head) {
         ListNode thisNode = head;
         int listLength = getListLength(head);
-        ListNode beforeLastNode = findBeforeLastNode(head);
-        ListNode lastNode = beforeLastNode.next;
-        for(int i = 0; i < listLength/2; i ++){
-            lastNode.next = thisNode.next;
-            thisNode.next = lastNode;
-            thisNode = thisNode.next;
-            thisNode = thisNode.next;
-            beforeLastNode.next = null;
-            beforeLastNode = lastNode.next;
-            beforeLastNode = findBeforeLastNode(head);
-            lastNode = beforeLastNode.next;
+        if(listLength > 1){
+            ListNode beforeLastNode = findBeforeLastNode(head);
+            ListNode lastNode = beforeLastNode.next;
+            for(int i = 0; i < listLength/2; i ++){
+                lastNode.next = thisNode.next;
+                thisNode.next = lastNode;
+                thisNode = thisNode.next;
+                thisNode = thisNode.next;
+                beforeLastNode.next = null;
+                beforeLastNode = lastNode.next;
+                beforeLastNode = findBeforeLastNode(head);
+                lastNode = beforeLastNode.next;
+            }
         }
     }
     public ListNode findBeforeLastNode (ListNode head){
