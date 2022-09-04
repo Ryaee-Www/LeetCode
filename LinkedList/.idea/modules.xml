@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LinkedList.iml" filepath="$PROJECT_DIR$/LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Reorder List/Reorder List.iml" filepath="$PROJECT_DIR$/Reorder List/Reorder List.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Reverse Linked List/Reverse Linked List.iml" filepath="$PROJECT_DIR$/Reverse Linked List/Reverse Linked List.iml" />
+    </modules>
+  </component>
+</project>
